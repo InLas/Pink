@@ -66,11 +66,15 @@
 }
 
 .initials__item  {
+  margin-bottom: 18px;
+
   @media (min-width: $tablet-width)  {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 
     width: 620px;
+
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width)  {
@@ -92,7 +96,6 @@
 
   @media (min-width: $tablet-width)  {
     margin: 0;
-    margin-top: 18px;
     margin-right: 19px;
   }
 }
@@ -105,7 +108,6 @@
 
   box-sizing: border-box;
 
-  margin-bottom: 18px;
   padding: 15px 20px 14px;
 
   color: #283645;
@@ -123,20 +125,14 @@
 
   &:hover  {
     border: 2px solid #283645;
-
-    transition: 0.3s;
   }
 
   &:focus  {
     border: 2px solid #D22856;
-
-    transition: 0.3s;
   }
 
   @media (min-width: $tablet-width)  {
     width: 100%;
-
-    margin-bottom: 52px;
   }
 }
 
@@ -379,7 +375,7 @@
 
 .contact-details  {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 42px;
   padding: 0;
 
   border: none;
@@ -435,6 +431,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width)  {
+    align-items: center;
+
     width: 620px;
 
     padding: 0;
@@ -461,11 +459,15 @@
 }
 
 .contact-details__item  {
+  margin-bottom: 17px;
+
   @media (min-width: $tablet-width)  {
     display: flex;
     flex-direction: column;
 
     position: relative;
+
+    margin-bottom: 28px;
 
     &::before  {
       content: "";
@@ -542,8 +544,8 @@
   color: #D22856;
 
   @media (min-width: $tablet-width)  {
-    margin-left: 79px;
-    margin-bottom: 28px;
+    margin: 0;
+    margin-left: 19px;
 
     order: 2;
   }
@@ -561,7 +563,6 @@
 
   box-sizing: border-box;
 
-  margin-bottom: 17px;
   padding: 15px 20px 14px;
 
   color: #283645;
@@ -580,20 +581,15 @@
 
   &:hover  {
     border: 2px solid #283645;
-
-    transition: 0.3s;
   }
 
   &:focus  {
     border: 2px solid #D22856;
-
-    transition: 0.3s;
   }
 
   @media (min-width: $tablet-width)  {
     width: 500px;
 
-    margin-left: 60px;
     margin-bottom: 10px;
     padding: 15px 79px 14px 20px;
 

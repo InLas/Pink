@@ -68,6 +68,20 @@ input[type="radio"].visually-hidden {
   padding: 0 20px;
 }
 
+picture {
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .main-nav--closed
 .main-nav__toggle::before {
   content: "";
@@ -1281,14 +1295,11 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .posts__panorama-picture {
-  font-size: 0;
-  line-height: 0;
   position: relative;
-  padding: 0;
-  margin: 0;
 }
 
 .posts__panorama-picture::before {
@@ -1309,12 +1320,9 @@ input[type="radio"].visually-hidden {
 
 .posts__panorama-description {
   width: 280px;
-  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto;
-}
-
-.posts__description-wrap {
-  margin-bottom: 20px;
   padding: 18px 0 18px 17px;
   background-color: #F2F2F2;
 }
@@ -1405,13 +1413,6 @@ input[type="radio"].visually-hidden {
 
 .posts__item {
   margin-bottom: 20px;
-}
-
-.posts__picture {
-  font-size: 0;
-  line-height: 0;
-  margin: 0;
-  padding: 0;
 }
 
 .posts__description {
@@ -1599,12 +1600,18 @@ input[type="radio"].visually-hidden {
 
 .upload__item {
   position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 48px;
+}
+
+.upload__item:last-child {
+  margin-bottom: 0;
 }
 
 .upload__item::after {
   content: "";
   position: absolute;
-  bottom: 25px;
+  bottom: 0;
   left: -38px;
   width: 320px;
   height: 1px;
@@ -1625,7 +1632,6 @@ input[type="radio"].visually-hidden {
   -webkit-appearance: none;
   width: 240px;
   height: 2px;
-  margin-bottom: 73px;
   background: #283645;
   outline: none;
 }
@@ -1821,6 +1827,10 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.initials__item {
+  margin-bottom: 18px;
+}
+
 .initials__title {
   font-size: 14px;
   line-height: 30px;
@@ -1838,7 +1848,6 @@ input[type="radio"].visually-hidden {
   width: 280px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 18px;
   padding: 15px 20px 14px;
   color: #283645;
   border: 2px solid #E5E5E5;
@@ -1871,16 +1880,10 @@ input[type="radio"].visually-hidden {
 
 .initials__input:hover {
   border: 2px solid #283645;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .initials__input:focus {
   border: 2px solid #D22856;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .achievements {
@@ -2046,7 +2049,7 @@ input[type="radio"].visually-hidden {
 
 .contact-details {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 42px;
   padding: 0;
   border: none;
 }
@@ -2077,6 +2080,10 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.contact-details__item {
+  margin-bottom: 17px;
+}
+
 .contact-details__label {
   display: inline-block;
   font-size: 14px;
@@ -2096,7 +2103,6 @@ input[type="radio"].visually-hidden {
   width: 280px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 17px;
   padding: 15px 20px 14px;
   color: #283645;
   border: 2px solid #E5E5E5;
@@ -2133,16 +2139,10 @@ input[type="radio"].visually-hidden {
 
 .contact-details__input:hover {
   border: 2px solid #283645;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .contact-details__input:focus {
   border: 2px solid #D22856;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .app {
@@ -2989,16 +2989,16 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
   }
 
+  .posts__panorama {
+    margin-bottom: 49px;
+  }
+
   .posts__panorama-picture::before {
     top: 57px;
     right: 40px;
   }
 
   .posts__panorama-description {
-    width: 620px;
-  }
-
-  .posts__description-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3010,7 +3010,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-bottom: 49px;
+    width: 620px;
     padding: 23px 30px 15px 30px;
   }
 
@@ -3108,9 +3108,14 @@ input[type="radio"].visually-hidden {
     margin-bottom: 37px;
   }
 
+  .upload__item {
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+  }
+
   .upload__item::after {
     content: "";
-    bottom: 20px;
+    bottom: 0;
     left: -52px;
     width: 275px;
   }
@@ -3152,7 +3157,6 @@ input[type="radio"].visually-hidden {
   .upload__range {
     display: inline;
     width: 202px;
-    margin-bottom: 55px;
   }
 
   .upload__button {
@@ -3215,21 +3219,20 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 620px;
+    margin-bottom: 52px;
   }
 
   .initials__title {
     margin: 0;
-    margin-top: 18px;
     margin-right: 19px;
   }
 
   .initials__input {
     width: 100%;
-    margin-bottom: 52px;
   }
 
   .achievements {
@@ -3303,6 +3306,9 @@ input[type="radio"].visually-hidden {
   }
 
   .contact-details__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 620px;
     padding: 0;
     margin: 0;
@@ -3317,6 +3323,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
+    margin-bottom: 28px;
   }
 
   .contact-details__item::before {
@@ -3357,8 +3364,8 @@ input[type="radio"].visually-hidden {
   }
 
   .contact-details__label {
-    margin-left: 79px;
-    margin-bottom: 28px;
+    margin: 0;
+    margin-left: 19px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -3366,7 +3373,6 @@ input[type="radio"].visually-hidden {
 
   .contact-details__input {
     width: 500px;
-    margin-left: 60px;
     margin-bottom: 10px;
     padding: 15px 79px 14px 20px;
     -webkit-box-ordinal-group: 2;
@@ -4146,11 +4152,6 @@ input[type="radio"].visually-hidden {
 
   .posts__panorama-description {
     width: 940px;
-    padding: 0 10px;
-  }
-
-  .posts__description-wrap {
-    margin-bottom: 49px;
     padding: 24px 30px 22px 27px;
   }
 

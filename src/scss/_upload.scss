@@ -219,11 +219,19 @@
 .upload__item {
   position: relative;
 
+  margin-bottom: 25px;
+  padding-bottom: 48px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &::after  {
     content: "";
 
     position: absolute;
-    bottom: 25px;
+
+    bottom: 0;
     left: -38px;
 
     width: 320px;
@@ -235,10 +243,13 @@
   }
 
   @media (min-width: $tablet-width)  {
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+
     &::after  {
       content: "";
 
-      bottom: 20px;
+      bottom: 0;
       left: -52px;
 
       width: 275px;
@@ -352,7 +363,7 @@
   width: 240px;
   height: 2px;
 
-  margin-bottom: 73px;
+  // margin-bottom: 73px;
 
   background: #283645;
   outline: none;
@@ -362,7 +373,7 @@
 
     width: 202px;
 
-    margin-bottom: 55px;
+    // margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width)  {
